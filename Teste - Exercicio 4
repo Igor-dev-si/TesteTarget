@@ -1,0 +1,51 @@
+#Exercicio 4 - Descubra a lógica e complete o próximo elemento:
+# a) 1, 3, 5, 7, ___
+# b) 2, 4, 8, 16, 32, 64, ____
+# c) 0, 1, 4, 9, 16, 25, 36, ____
+# d) 4, 16, 36, 64, ____
+# e) 1, 1, 2, 3, 5, 8, ____
+# f) 2,10, 12, 16, 17, 18, 19, ____ 
+
+def proximo_elemento_a():
+    sequencia = [1, 3, 5, 7]
+    prox_num = sequencia[-1] + 2
+    return prox_num
+
+print("a) Próximo elemento:", proximo_elemento_a())
+
+def proximo_elemento_b():
+    sequencia = [2, 4, 8, 16, 32, 64]
+    prox_num = sequencia[-1] * 2
+    return prox_num
+
+print("b) Próximo elemento:", proximo_elemento_b())
+
+def proximo_elemento_c():
+    sequencia = [0, 1, 4, 9, 16, 25, 36]
+    prox_num = (len(sequencia) + 1) ** 2
+    return prox_num
+
+print("c) Próximo elemento:", proximo_elemento_c())
+
+def proximo_elemento_d():
+    sequencia = [4, 16, 36, 64]
+    prox_num = (len(sequencia) + 2) ** 2
+    return prox_num
+
+print("d) Próximo elemento:", proximo_elemento_d())
+
+def proximo_elemento_e():
+    sequencia = [1, 1, 2, 3, 5, 8]
+    prox_num = sequencia[-1] + sequencia[-2]
+    return prox_num
+
+print("e) Próximo elemento:", proximo_elemento_e())
+
+def proximo_elemento_f():
+    sequencia = [2, 10, 12, 16, 17, 18, 19]
+    incremento = [8, 2, 4, 1, 1]
+    prox_incremento = incremento[-1] + 1
+    prox_num = sequencia[-1] + prox_incremento
+    return prox_num
+
+print("f) Próximo elemento:", proximo_elemento_f())
