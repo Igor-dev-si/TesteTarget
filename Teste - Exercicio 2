@@ -1,0 +1,14 @@
+#Exercicio 2 - Escreva um programa que verifique, em uma string, a existência da letra ‘a’, \
+# seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
+def count(str):
+    count = 0
+    for char in str:
+        if char.lower() == 'a':
+            count += 1
+    if count > 0:
+        return f"A letra 'a' existe na string e ocorre {count} vezes."
+    else:
+        return "A letra 'a' não existe na string."
+
+string = input("Digite uma frase: ")
+print(count(string))
